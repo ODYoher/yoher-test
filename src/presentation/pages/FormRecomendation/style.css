@@ -1,0 +1,70 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.form-control-studios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.full-width {
+  width: 80%;
+}
+
+.button {
+  height: 34px;
+  width: 200px;
+  font-size: 16px;
+  border: 0px;
+  font-weight: 400;
+  border-radius: 10px;
+  margin: 0px 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button-success {
+  background-color: #0084a8;
+  color: #fff;
+}
+
+.button-cancel {
+  background-color: #a87300;
+  color: #fff;
+}
+
+.close-modal-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close-modal {
+  font-size: 25px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.title {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,13 +1,13 @@
 import React from 'react'
 import './recomendations.css'
 
-export default function Recomendations(props) {
+export default function Recomendations (props) {
     return (
         <div className='recomendations-container'>
-            <div className='recomendations-container-title'> 
+            <div className='recomendations-container-title'>
                 <img className='img' src={props.image} alt="" />
                 <p className='title'>{props.title}</p>
-            </div> 
+            </div>
             <div className="section">
                 <p className="title">Más información</p>
                 <p className='instructions'>{props.instructions}.</p>
@@ -15,7 +15,7 @@ export default function Recomendations(props) {
 
             <div className="section">
                 <p className="title">Por qué ayuda</p>
-            <p className="why">{props.why}</p>
+                <p className="why">{props.why}</p>
             </div>
 
             <div className="section">
@@ -27,14 +27,18 @@ export default function Recomendations(props) {
                 <p className="title">Contraindicaciones</p>
                 <p className="counterindication">{props.counterindication}</p>
             </div>
-        
+
             <div className='section'>
                 <p className='title'>Estudios</p>
-                <div className="studies">
-                    <p className="study-title">{props.studies}</p>
-                    <a className='study-link' href={props.studyLink}>Ver Estudio</a>
-                </div>
-            </div> 
+                {props.studies.map((study, i) => {
+                    return (
+                        <div className="studies" key={i}>
+                            <p className="study-title">{study.label}</p>
+                            <a className='study-link' href={study.url}>Ver Estudio</a>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

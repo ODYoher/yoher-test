@@ -1,0 +1,10 @@
+.flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.m-16 {
+  width: 45%;
+  margin: 16px 40px;
+}
